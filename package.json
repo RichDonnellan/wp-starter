@@ -1,0 +1,20 @@
+{
+    "name": "alcohol-org-v2",
+    "version": "1.0.0",
+    "main": "src/js/app.js",
+    "scripts": {
+        "webpack": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "dev": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hmr": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "author": "American Addiction Centers, Inc.",
+    "license": "proprietary",
+    "devDependencies": {
+        "browser-sync": "^2.23.5",
+        "browser-sync-webpack-plugin": "^1.2.0",
+        "laravel-mix": "^1.7.2",
+        "precss": "^2.0.0",
+        "tailwindcss": "^0.4.0"
+    }
+}
