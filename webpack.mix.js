@@ -2,12 +2,12 @@ const mix = require('laravel-mix');
 
 const config = {
   site: 'alcohol.test', // VM address
-  repoName: path.basename(__dirname),
+  themeName: path.basename(__dirname),
   publicPath: 'dist',
 };
 
 mix.setPublicPath(config.publicPath);
-mix.setResourceRoot(`/app/themes/${config.repoName}/${config.publicPath}/`);
+mix.setResourceRoot(`/app/themes/${config.themeName}/${config.publicPath}/`);
 
 /*
  |--------------------------------------------------------------------------
