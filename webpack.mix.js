@@ -21,10 +21,7 @@ mix.setResourceRoot(`/app/themes/${config.themeName}/${config.publicPath}/`);
 
 mix
   .js('src/js/app.js', 'js')
-  .postCss('src/css/app.css', 'css', [
-    require('tailwindcss')('./tailwind-config.js'),
-    require('precss'),
-  ]);
+  .sass('src/sass/app.scss', 'css');
 
 if (mix.inProduction()) {
   mix.sourceMaps();
