@@ -22,16 +22,21 @@ mix.setResourceRoot(`/app/themes/${config.themeName}/${config.publicPath}/`);
 mix
   .js('src/js/app.js', 'js')
   .sass('src/sass/app.scss', 'css')
-  .copy('src/images/*', `${config.publicPath}/images`);
+  .copy('src/images/*', `${config.publicPath}/images`)
+  .webpackConfig({
+    devtool: 'source-map'
+  })
+  .sourceMaps();
 
-if (mix.inProduction()) {
-  mix.sourceMaps();
-  mix.version();
+if (!mix.inProduction()) {
+  mix.browserSync({
+    host: config.site,
+    proxy: config.site,
+    open: 'external',
+    files: ['dist/**/*', '**/*.php']
+  });
 }
 
-mix.browserSync({
-  host: config.site,
-  proxy: config.site,
-  open: 'external',
-  files: ['dist/**/*', '**/*.php']
-});
+if (mix.inProduction()) {
+  mix.version();
+}
