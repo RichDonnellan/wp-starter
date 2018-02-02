@@ -4,6 +4,7 @@ const config = {
   site: 'alcohol.test', // VM address
   themeName: path.basename(__dirname),
   publicPath: 'dist',
+  sourcePath: 'assets',
 };
 
 mix.setPublicPath(config.publicPath);
@@ -20,9 +21,9 @@ mix.setResourceRoot(`/app/themes/${config.themeName}/${config.publicPath}/`);
  */
 
 mix
-  .js('src/js/app.js', 'js')
-  .sass('src/sass/app.scss', 'css')
-  .copy('src/images/*', `${config.publicPath}/images`)
+  .js(`${config.sourcePath}/js/app.js`, 'js')
+  .sass(`${config.sourcePath}/sass/app.scss`, 'css')
+  .copy(`${config.sourcePath}/images/*`, `${config.publicPath}/images`)
   .webpackConfig({
     devtool: 'source-map'
   })
