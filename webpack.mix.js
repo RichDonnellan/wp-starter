@@ -8,6 +8,7 @@ const config = {
 };
 
 mix.setPublicPath(config.publicPath);
+// Used when processCssUrls is true
 mix.setResourceRoot(`/app/themes/${config.themeName}/${config.publicPath}/`);
 
 /*
@@ -20,14 +21,19 @@ mix.setResourceRoot(`/app/themes/${config.themeName}/${config.publicPath}/`);
  |
  */
 
-mix
-  .js(`${config.sourcePath}/js/app.js`, 'js')
-  .sass(`${config.sourcePath}/sass/app.scss`, 'css')
-  .copy(`${config.sourcePath}/images/*`, `${config.publicPath}/images`)
-  .webpackConfig({
+mix.js(`${config.sourcePath}/js/app.js`, 'js');
+mix.sass(`${config.sourcePath}/sass/app.scss`, 'css')
+  .options({
+    processCssUrls: false,
+    postCss: [
+      require('tailwindcss')('./tailwind.js'),
+      require('postcss-color-function'),
+    ],
+  });
+mix.copy(`${config.sourcePath}/images/*`, `${config.publicPath}/images`)
+mix.webpackConfig({
     devtool: 'source-map'
-  })
-  .sourceMaps();
+}).sourceMaps();
 
 if (!mix.inProduction()) {
   mix.browserSync({
