@@ -12,7 +12,9 @@
     "devDependencies": {
         "browser-sync": "^2.23.6",
         "browser-sync-webpack-plugin": "^2.0.1",
-        "laravel-mix": "^2.0.0"
+        "laravel-mix": "^2.0.0",
+        "postcss-color-function": "^4.0.1",
+        "tailwindcss": "^0.4.1"
     },
     "dependencies": {
         "normalize.css": "^7.0.0"
