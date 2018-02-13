@@ -24,7 +24,7 @@ mix.setResourceRoot(`/app/themes/${config.themeName}/${config.publicPath}/`);
 mix.js(`${config.sourcePath}/js/app.js`, 'js');
 mix.sass(`${config.sourcePath}/sass/app.scss`, 'css')
   .options({
-    processCssUrls: false,
+    processCssUrls: true,
     postCss: [
       require('tailwindcss')('./tailwind.js'),
       require('postcss-color-function'),
