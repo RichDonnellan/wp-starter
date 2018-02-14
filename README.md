@@ -22,3 +22,12 @@ To compile assets, we'll be using [Laravel Mix](https://github.com/JeffreyWay/la
 - `npm run build` - builds the files
 - `npm run watch` - builds the files and fires up BrowserSync
 - `npm run production` - builds the files for production use
+
+### Tailwind CSS
+This theme relies heavily on the utility-first (customizable) framework, [Tailwind CSS](https://tailwindcss.com). It's highly suggested to read the documentation linked and understand the concept behind this methodology.
+
+> Tailwind provides highly composable, low-level utility classes that make it easy to build complex user interfaces without encouraging any two sites to look the same.
+
+It's also component friendly: 
+
+> Tailwind provides tools for extracting component classes from repeated utility patterns, making it easy to update multiple instances of a component ...
