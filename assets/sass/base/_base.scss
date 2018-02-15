@@ -22,8 +22,8 @@ html {
 body {
   @apply .flex .flex-col;
   min-height: 100vh;
-  text-rendering: optimizeLegibility;
 }
+
 [role="main"] {
   flex: 1;
 }
