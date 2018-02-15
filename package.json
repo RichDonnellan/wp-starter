@@ -16,7 +16,5 @@
         "postcss-color-function": "^4.0.1",
         "tailwindcss": "^0.4.1"
     },
-    "dependencies": {
-        "normalize.css": "^7.0.0"
-    }
+    "dependencies": {}
 }
