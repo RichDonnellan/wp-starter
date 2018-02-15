@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+  font-family: $font-family;
+  // font-size: rem($base--font-size);
+  // line-height: $base--line-height;
+  overflow-y: scroll;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: inherit;
+  &:before,
+  &:after { box-sizing: inherit; pointer-events: none; }
+}
+
+// Sticky footer - https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
+body {
+  @apply .flex .flex-col;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+}
+[role="main"] {
+  flex: 1;
+}
+// end sticky footer
+
+// reset for mobile browsers - https://css-tricks.com/forums/topic/weird-mobile-safari-font-face-problem-font-doubled-and-offset-to-the-left/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+ul {
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+b {
+  font-weight: bold;
+}
+
+address {
+  font-style: normal;
+}
+
+::selection {
+  color: $selection-text-color;
+  background-color: $selection-background-color;
+}
+
+a {
+  text-decoration: none;
+  color: $link-text-color;
+  &:hover {
+    color: $link-text-color--hover;
+  }
+}
+
+svg {
+  display: block;
+}
+
+// Set headings
+@each $heading, $size in $headings {
+    #{$heading}, .#{$heading} {
+        font-size: $size;
+    }
+}
