@@ -22,14 +22,13 @@ mix.setResourceRoot(`/app/themes/${config.themeName}/${config.publicPath}/`);
  */
 
 mix.js(`${config.sourcePath}/js/app.js`, 'js');
-mix.sass(`${config.sourcePath}/sass/app.scss`, 'css')
-  .options({
-    processCssUrls: true,
-    postCss: [
-      require('tailwindcss')('./tailwind.js'),
-      require('postcss-color-function'),
-    ],
-  });
+mix.sass(`${config.sourcePath}/sass/app.scss`, 'css').options({
+  processCssUrls: true, // currently throws a warning, but all seems to be working: https://tailwindcss.com/docs/installation#laravel-mix
+  postCss: [
+    require('tailwindcss')('./tailwind.js'),
+    require('postcss-color-function')
+  ]
+});
 mix.copy(`${config.sourcePath}/images/*`, `${config.publicPath}/images`)
 mix.webpackConfig({
     devtool: 'source-map'
