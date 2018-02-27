@@ -16,6 +16,9 @@
 1. Install npm dependencies:
 `npm install`
 
+1. Install PHP dependencies (plugins):
+`composer install`
+
 ### Laravel Mix
 To compile assets, we'll be using [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs), a fluent wrapper API for defining basic webpack build steps. Use the following npm scripts to build your project:
 
