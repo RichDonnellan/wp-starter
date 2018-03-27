@@ -1,0 +1,17 @@
+.overlay {
+  &--base {
+    position: relative;
+      &::before {
+      @include overlay($overlay--base);
+    }
+  }
+  &--tinted {
+    position: relative;
+    &::before {
+      @include overlay($overlay--tint);
+    }
+    &::after {
+      @include overlay($overlay--base);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@mixin overlay($bg-color) {
+  background-color: $bg-color;
+  content: '';
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@mixin triangle($color, $side, $angle) {
+  position: absolute;
+    top: -70px;
+    left: 0;
+    right: 0;
+  margin: auto;
+  width: 137px;
+  height: 137px;
+  transform: rotate(45deg);
+  border-right: 4px solid #e74c3c;
+  border-bottom: 4px solid #e74c3c;
+}

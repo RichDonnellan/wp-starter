@@ -1,0 +1,23 @@
+.container {
+  $padding-mobile: 8;
+  $padding-tablet: 12;
+  $padding-desktop: 20;
+
+  padding-right: rem($padding-mobile);
+  padding-left: rem($padding-mobile);
+  margin: 0 auto;
+
+  @screen md {
+    padding-right: rem($padding-tablet);
+    padding-left: rem($padding-tablet);
+  }
+
+  @screen xl {
+    padding-right: rem($padding-desktop);
+    padding-left: rem($padding-desktop);
+  }
+
+  &--no-center {
+    margin: 0 initial;
+  }
+}

@@ -1,0 +1,51 @@
+@screen md {
+  #menu-primary-navigation {
+    @apply .flex .items-stretch;
+
+    /* First level */
+    & .menu-item {
+      @apply .flex .items-stretch .px-6 .relative;
+      & a {
+        @apply .text-white .flex .items-center;
+      }
+    }
+  }
+
+  .menu-item-has-children {
+    /* Down arrow */
+    &::before {
+      $color: config('colors.white');
+      content: "";
+      position: absolute;
+      right: 0.6rem;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-top: 5px solid $color;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+    }
+    /* Second level */
+    & .sub-menu {
+      @apply .flex .flex-wrap .absolute .p-4 .z-10 .bg-primary-500 .invisible .opacity-0 .text-sm;
+      width: 35rem;
+      top: 100%;
+      left: 0;
+      white-space: no-wrap;
+      word-wrap: normal;
+
+      & .menu-item {
+        @apply .px-0;
+        width: calc(100% / 3);
+
+        & a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &:hover > .sub-menu {
+      @apply .visible .opacity-100;
+    }
+  }
+}

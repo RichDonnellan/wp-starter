@@ -1,0 +1,17 @@
+.button {
+  @apply .bg-secondary .border-0 .rounded-sm .cursor-pointer .shadow .px-7 .py-3;
+  transition: background-color .2s ease-in-out;
+  &:hover {
+    @apply .bg-secondary-200;
+  }
+  & a {
+    text-decoration: none;
+    @apply .text-white .font-bold .block;
+  }
+  &--large {
+    @apply .text-xl;
+  }
+  &--mobile {
+    @apply .rounded-full .p-3 .mx-0;
+  }
+}

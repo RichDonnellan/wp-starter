@@ -1,0 +1,12 @@
+// image()
+//
+//  Outputs correct image path in background/-image property.
+//
+// $asset     - Value to convert to ems.
+// $path      - The path to the outputed image. Defaults to `$image-path`
+// @required  - `$image-path` (in _variables.scss)
+// @returns   - string
+
+@function image($asset, $path: $image-path) {
+    @return url($path + '/' + $asset);
+}
