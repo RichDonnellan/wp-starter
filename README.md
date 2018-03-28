@@ -22,6 +22,7 @@
 ### Laravel Mix
 To compile assets, we'll be using [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs), a fluent wrapper API for defining basic webpack build steps. Use the following npm scripts to build your project:
 
+- `npm run clean` - removes the `dist` folder
 - `npm run build` - builds the files
 - `npm run watch` - builds the files and fires up BrowserSync
 - `npm run production` - builds the files for production use
