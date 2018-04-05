@@ -1,11 +1,7 @@
+// Supplements the Tailwind CSS container component options
 .container {
-  $padding-mobile: 8;
   $padding-tablet: 12;
   $padding-desktop: 20;
-
-  padding-right: rem($padding-mobile);
-  padding-left: rem($padding-mobile);
-  margin: 0 auto;
 
   @screen md {
     padding-right: rem($padding-tablet);
