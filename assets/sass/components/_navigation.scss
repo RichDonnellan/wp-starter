@@ -1,12 +1,12 @@
 @screen md {
   #menu-primary-navigation {
-    @apply .flex .items-stretch;
+    @apply flex items-stretch;
 
     /* First level */
     & .menu-item {
-      @apply .flex .items-stretch .px-6 .relative;
+      @apply flex items-stretch px-6 relative;
       & a {
-        @apply .text-white .flex .items-center;
+        @apply text-white flex items-center;
       }
     }
   }
@@ -28,7 +28,7 @@
     }
     /* Second level */
     & .sub-menu {
-      @apply .flex .flex-wrap .absolute .p-4 .z-10 .bg-primary-500 .invisible .opacity-0 .text-sm;
+      @apply flex flex-wrap absolute p-4 z-10 bg-primary-500 invisible opacity-0 text-sm;
       width: 35rem;
       top: 100%;
       left: 0;
@@ -36,7 +36,7 @@
       word-wrap: normal;
 
       & .menu-item {
-        @apply .px-0;
+        @apply px-0;
         width: calc(100% / 3);
 
         & a:hover {
@@ -45,7 +45,7 @@
       }
     }
     &:hover > .sub-menu {
-      @apply .visible .opacity-100;
+      @apply visible opacity-100;
     }
   }
 }

@@ -18,7 +18,7 @@ html {
 
 // Sticky footer - https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
 body {
-  @apply .flex .flex-col;
+  @apply flex flex-col;
   min-height: 100vh;
 }
 
