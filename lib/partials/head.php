@@ -9,4 +9,4 @@
         <meta name="format-detection" content="telephone=no">
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class('font-sans leading-normal'); ?>>
+    <body <?php body_class('font-sans leading-normal text-dark'); ?>>
