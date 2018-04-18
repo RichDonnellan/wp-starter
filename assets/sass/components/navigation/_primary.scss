@@ -1,16 +1,23 @@
 @screen md {
+  $active-border-thickness: 2px;
   #menu-primary-navigation {
+
     @apply flex items-stretch;
 
     /* First level */
-    & .menu-item {
-      @apply flex items-stretch px-6 relative;
+    & > .menu-item {
+      @apply flex items-stretch relative;
+      border-bottom: $active-border-thickness solid transparent;
+
+      &:hover {
+        border-bottom: $active-border-thickness solid config('colors.white');
+      }
       & a {
-        @apply text-white flex items-center;
+        @apply text-white flex items-center px-6;
       }
     }
   }
-
+  // Has a sub-menu
   .menu-item-has-children {
     /* Down arrow */
     &::before {
@@ -23,14 +30,14 @@
       border-top: 5px solid $color;
       top: 50%;
       transform: translateY(-50%);
-      width: 0;
-      height: 0;
+      /* width: 0;
+      height: 0; */
     }
     /* Second level */
     & .sub-menu {
-      @apply flex flex-wrap absolute p-4 z-10 bg-primary-500 invisible opacity-0 text-sm;
+      @apply flex flex-wrap absolute z-10 bg-primary-500 invisible opacity-0 text-sm list-reset p-4;
       width: 35rem;
-      top: 100%;
+      top: calc(100% + #{$active-border-thickness});
       left: 0;
       white-space: no-wrap;
       word-wrap: normal;
@@ -44,7 +51,7 @@
         }
       }
     }
-    &:hover > .sub-menu {
+    &:hover > .sub-menu, & > a:focus + .sub-menu {
       @apply visible opacity-100;
     }
   }

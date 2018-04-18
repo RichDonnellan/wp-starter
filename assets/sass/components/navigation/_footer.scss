@@ -1,0 +1,17 @@
+#menu-footer-navigation {
+  @apply flex;
+  li {
+    @apply inline px-3 border-r;
+
+    &:last-child {
+      @apply border-none;
+    }
+  }
+  a {
+    @apply text-white underline;
+
+    &:hover {
+      @apply no-underline;
+    }
+  }
+}
