@@ -19,7 +19,8 @@ $soil = [
 $theme_support = [
     'title-tag' => null,
     'post-thumbnails' => null,
-    'menus' => null
+    'menus' => null,
+    'yoast-seo-breadcrumbs' => null,
 ];
 
 $menus = [
