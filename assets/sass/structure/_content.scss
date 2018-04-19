@@ -1,6 +1,8 @@
 // Base styles for user submitted content
 .page article,
-.post article {
+.post article,
+.error404 article {
+  h1,
   h2,
   h3,
   h4 {
