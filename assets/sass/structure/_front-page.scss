@@ -14,16 +14,13 @@
   counter-increment: mission;
 
   &::before {
-    content: counter(mission);
-    position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
     color: rgba(66, 106, 139, .8);
+    content: counter(mission);
     font-size: rem(340);
-    line-height: rem(340);
     font-weight: bold;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+    transform: translate(-50%, -50%);
   }
-
 }
