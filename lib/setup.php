@@ -8,7 +8,6 @@ $soil = [
     'soil-clean-up' => null,
     'soil-disable-asset-versioning' => null,
     'soil-disable-trackbacks' => null,
-    'soil-google-analytics' => 'UA-XXXXX-Y',
     'soil-jquery-cdn' => null,
     'soil-js-to-footer' => null,
     'soil-nav-walker' => null,
