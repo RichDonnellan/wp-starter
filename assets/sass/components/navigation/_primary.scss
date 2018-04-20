@@ -21,17 +21,12 @@
   .menu-item-has-children {
     /* Down arrow */
     &::before {
-      $color: config('colors.white');
-      content: "";
+      color: config('colors.white');
+      content: "\025BE";
       position: absolute;
       right: 0.6rem;
-      border-right: 5px solid transparent;
-      border-left: 5px solid transparent;
-      border-top: 5px solid $color;
       top: 50%;
       transform: translateY(-50%);
-      /* width: 0;
-      height: 0; */
     }
     /* Second level */
     & .sub-menu {
