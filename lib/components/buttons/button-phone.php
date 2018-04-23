@@ -1,8 +1,8 @@
 <?php if (!isset($data)) return; ?>
 
-<button role="button" class="button <?= exists($data->modifier) ?>">
+<a role="button" class="button <?= exists($data->modifier) ?>" href="tel:1+<?= exists($data->phone) ?>">
     <?php if (isset($data->mobile)) : ?>
-        <span class="inline-block mr-1"> <?= render('/lib/components/buttons/icon-phone.svg', ['modifier' => 'text-white']); ?></span>
+        <span><?= render('/lib/components/buttons/icon-phone.svg', ['modifier' => 'text-white']); ?></span>
     <?php endif ?>
-    <a class="" href="tel:<?= exists($data->phone)  ?>"><?= exists($data->phone) ?></a>
-</button>
+    <?= exists($data->content) ?>
+</a>
