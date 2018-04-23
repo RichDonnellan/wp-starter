@@ -1,0 +1,18 @@
+.hamburger {
+  $this: &;
+  @apply inline-block p-3;
+
+  &-icon {
+    @include burger(24px, 3px, 5px, #fff);
+  }
+
+  &.is-active #{$this}-icon {
+    @include burger-to-cross;
+  }
+}
+
+@screen md {
+  .hamburger {
+    @apply hidden opacity-0;
+  }
+}

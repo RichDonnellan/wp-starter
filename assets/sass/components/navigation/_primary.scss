@@ -2,7 +2,7 @@
   $active-border-thickness: 2px;
   #menu-primary-navigation {
 
-    @apply flex items-stretch;
+    @apply static flex items-stretch visible opacity-100;
 
     /* First level */
     & > .menu-item {
