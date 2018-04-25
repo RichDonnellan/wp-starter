@@ -1,7 +1,7 @@
 const mix = require('laravel-mix');
 
 const config = {
-  site: 'alcohol.test', // VM address
+  site: path.basename(path.join(__dirname, '..', '..', '..', '..')), // VM address
   themeName: path.basename(__dirname),
   publicPath: 'dist',
   sourcePath: 'assets',
