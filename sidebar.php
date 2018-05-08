@@ -1,3 +1,3 @@
 <?php
 
-include(THEME_DIR . '/views/sidebar.view.php');
+include(THEME_DIR . '/lib/structure/sidebar.view.php');
