@@ -5,3 +5,9 @@
         <?= render('/lib/components/buttons/hamburger.php'); ?>
     </div>
 </header>
+
+<?php
+if (!is_front_page() && !is_home()) {
+    include(THEME_DIR . '/lib/components/breadcrumb/breadcrumb.php');
+}
+?>
