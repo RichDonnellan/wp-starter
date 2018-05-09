@@ -2,6 +2,8 @@
 .page article,
 .post article,
 .error404 article {
+  max-width: rem(800);
+
   h1,
   h2,
   h3,
@@ -9,7 +11,7 @@
     @apply font-bold mb-6;
   }
   p, ul, ol {
-    @apply mb-4;
+    @apply mb-6;
   }
   ul, ol {
     @apply pl-10;
@@ -24,5 +26,11 @@
   }
   ol > li {
     @apply pl-3;
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
