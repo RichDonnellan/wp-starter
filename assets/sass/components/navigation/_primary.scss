@@ -34,7 +34,7 @@
       width: 35rem;
       top: calc(100% + #{$active-border-thickness});
       left: 0;
-      white-space: no-wrap;
+      white-space: nowrap;
       word-wrap: normal;
 
       & .menu-item {
