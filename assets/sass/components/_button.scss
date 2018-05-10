@@ -1,8 +1,11 @@
 .button {
   @apply bg-secondary border-0 rounded-sm cursor-pointer shadow px-7 py-3 text-white font-bold;
-  transition: background-color .2s ease-in-out;
-  &:hover {
+  transition: all .2s ease-in-out;
+  &:hover, &:focus {
     @apply bg-secondary-200 text-white;
+  }
+  &:active {
+    @apply bg-secondary-500 text-white;
   }
   &--large {
     @apply text-xl;
