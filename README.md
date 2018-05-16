@@ -11,7 +11,7 @@
 `cd web/app/themes`
 
 1. Clone the theme:
-`git clone git@github.com:American-Addiction-Centers/alcohol-org-v2.git`
+`git clone git@github.com:American-Addiction-Centers/alcohol-org.git`
 
 1. Install npm dependencies:
 `npm install`
