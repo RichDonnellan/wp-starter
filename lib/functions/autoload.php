@@ -10,7 +10,7 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 
-namespace Aac\Alcohol\Lib\Functions;
+namespace Aac\Alcohol;
 
 function loadThemeFiles()
 {
@@ -23,14 +23,13 @@ function loadThemeFiles()
         'lib/functions/render.php',
         'lib/functions/featured-image.php',
         'lib/functions/exists.php',
+        'lib/functions/meta-boxes.php',
 
         'lib/setup.php',
     ];
 
     loadFiles($required_files);
 }
-
-
 
 function loadFiles(array $files)
 {
