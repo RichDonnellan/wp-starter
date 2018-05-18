@@ -1,2 +1,2 @@
 import './sticky';
-import './hamburger';
+import './mobile-menu';
