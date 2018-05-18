@@ -9,9 +9,7 @@ function registerThemeSupport(array $config)
 
 function registerNavMenus(array $config)
 {
-    foreach ($config as $menu => $args) {
-        register_nav_menus([$menu, $args]);
-    }
+    register_nav_menus($config);
 }
 
 function registerImageSizes(array $config)
