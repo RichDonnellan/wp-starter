@@ -18,13 +18,13 @@ $soil = [
 $theme_support = [
     'title-tag' => null,
     'post-thumbnails' => null,
-    'menus' => null,
     'yoast-seo-breadcrumbs' => null,
 ];
 
 $menus = [
     'primary' => __('Primary Navigation', TEXT_DOMAIN),
-    'footer' => __('Footer Navigation', TEXT_DOMAIN)
+    'primary-mobile' => __('Mobile Navigation', TEXT_DOMAIN),
+    'footer' => __('Footer Navigation', TEXT_DOMAIN),
 ];
 
 $image_sizes = [
