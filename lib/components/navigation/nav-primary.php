@@ -1,8 +1,7 @@
 <?php
 
 $args = [
-    'menu' => 'Primary Navigation',
-    'theme_location' => 'primary-menu',
+    'theme_location' => 'primary'
 ];
 
 include(THEME_DIR . '/lib/components/navigation/nav-primary.view.php');

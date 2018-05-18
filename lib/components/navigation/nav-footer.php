@@ -1,8 +1,7 @@
 <?php
 
 $args = [
-    'menu' => 'Footer Navigation',
-    'theme_location' => 'footer-menu',
+    'theme_location' => 'footer'
 ];
 
 include(THEME_DIR . '/lib/components/navigation/nav-footer.view.php');
