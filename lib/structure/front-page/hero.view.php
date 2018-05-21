@@ -6,6 +6,6 @@
         <p class="<?= exists($data->modifier) ?>">
             <?= exists($data->subtitle) ?>
         </p>
-        <?= render('/lib/components/buttons/button-phone.php', ['phone' => '888-919-3845', 'content' => 'Call 1-888-919-3845', 'modifier' => 'button--large mt-4']); ?>
+        <?= render('/lib/components/buttons/button-phone.php', ['phone' => CALLRAIL_PHONE, 'content' => 'Call 1-'.CALLRAIL_PHONE, 'modifier' => 'button--large mt-4']); ?>
     </div>
 </div>

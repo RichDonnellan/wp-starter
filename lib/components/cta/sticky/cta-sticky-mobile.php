@@ -4,6 +4,6 @@
     <div class="flex container justify-between items-center py-4">
         <div class="<?= exists($data->modifier) ?>"><?= exists($data->content) ?></div>
         <!-- <?= render('/lib/components/compliance/compliance.php', ['content' => 'Who Answers?']); ?> -->
-        <?= render('/lib/components/buttons/button-phone.php', ['mobile' => 'true', 'phone' => '888-919-3845', 'modifier' => 'mx-3 button--mobile']); ?>
+        <?= render('/lib/components/buttons/button-phone.php', ['mobile' => 'true', 'phone' => CALLRAIL_PHONE, 'modifier' => 'mx-3 button--mobile']); ?>
     </div>
 </div>

@@ -31,7 +31,12 @@ function enqueueFiles($ext)
     }
 }
 
-function enqueueFonts($font)
+function enqueueScript($name, $src, $dep = [], $ver = false, $in_footer = false)
+{
+    wp_enqueue_script($name, $src, $dep, $ver, $in_footer);
+}
+
+function enqueueFont($font)
 {
     wp_enqueue_style("TEXT_DOMAIN-fonts", $font, false);
 }
@@ -41,7 +46,8 @@ function enqueueAssets()
     add_action('wp_enqueue_scripts', function () {
         enqueueFiles('css');
         enqueueFiles('js');
-        enqueueFonts('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+        enqueueFont('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+        enqueueScript('callrail', '//cdn.callrail.com/companies/885043551/9fc0b0e7540344aa6301/12/swap.js');
     });
 }
 
