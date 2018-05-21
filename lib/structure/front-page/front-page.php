@@ -23,7 +23,7 @@ render('/lib/structure/front-page/front-page.view.php', [
         (object) [
             'title' => 'Understanding Alcoholism',
             'content' => 'Alcoholism is a chronic, lifelong disease. It\'s important to make a distinction between alcohol abuse and full-blown alcoholism.',
-            'url' => 'this-is-great',
+            'url' => 'alcoholism',
             'modifier' => 'bg-aqua-haze',
             'image' => (object) [
                 'name' => 'understanding-alcoholism.jpg',
@@ -34,7 +34,7 @@ render('/lib/structure/front-page/front-page.view.php', [
         (object) [
             'title' => 'Alcoholism Treatment',
             'content' => 'When a person receives a diagnosis of alcoholism, the next important step is getting the appropriate alcoholism treatment.',
-            'url' => '',
+            'url' => 'treatment',
             'modifier' => '',
             'image' => (object) [
                 'name' => 'alcoholism-treatment.jpg',
@@ -45,7 +45,7 @@ render('/lib/structure/front-page/front-page.view.php', [
         (object) [
             'title' => 'Frequently Asked Questions',
             'content' => 'Find the answers to most of your questions about alcoholism, alcohol abuse, alcoholics, and any other related topics.',
-            'url' => '',
+            'url' => 'faq',
             'modifier' => 'bg-aqua-haze',
             'image' => (object) [
                 'name' => 'faq.jpg',
