@@ -27,10 +27,4 @@
   ol > li {
     @apply pl-3;
   }
-  a {
-    text-decoration: underline;
-    &:hover {
-      text-decoration: none;
-    }
-  }
 }

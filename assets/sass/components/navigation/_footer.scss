@@ -8,10 +8,6 @@
     }
   }
   a {
-    @apply text-white underline;
-
-    &:hover {
-      @apply no-underline;
-    }
+    @apply text-white;
   }
 }

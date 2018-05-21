@@ -30,7 +30,7 @@
       list-style: none;
 
       & a {
-        @apply block text-white w-full p-4 text-2xl;
+        @apply block text-white w-full p-4 text-2xl no-underline;
       }
     }
 }
