@@ -1,48 +1,53 @@
 @screen md {
+  $tt: .3s;
   $active-border-thickness: 2px;
   #menu-primary-navigation {
-
-    @apply static flex items-stretch visible opacity-100;
+    @apply flex text-white;
 
     /* First level */
     & > .menu-item {
-      @apply flex items-stretch relative;
+      @apply flex relative;
       border-bottom: $active-border-thickness solid transparent;
+      transition: border-bottom $tt;
 
       &:hover {
-        border-bottom: $active-border-thickness solid config('colors.white');
+        border-bottom: $active-border-thickness solid currentColor;
       }
-      & a {
-        @apply text-white flex items-center px-6;
+      & > a {
+        @apply flex items-center px-6 no-underline;
+        color: currentColor;
       }
     }
   }
-  // Has a sub-menu
+
   .menu-item-has-children {
-    /* Down arrow */
+    /* Down triangle */
     &::before {
-      color: config('colors.white');
+      color: currentColor;
       content: "\025BE";
       position: absolute;
       right: 0.6rem;
       top: 50%;
       transform: translateY(-50%);
     }
-    /* Second level */
-    & .sub-menu {
+    & > .sub-menu {
       @apply flex flex-wrap absolute z-10 bg-primary-500 invisible opacity-0 text-sm list-reset p-4;
       width: 35rem;
       top: calc(100% + #{$active-border-thickness});
       left: 0;
       white-space: nowrap;
       word-wrap: normal;
+      transition: opacity $tt, visibility $tt;
 
       & .menu-item {
-        @apply px-0;
         width: calc(100% / 3);
 
-        & a:hover {
-          text-decoration: underline;
+        & > a {
+          @apply text-white flex items-center no-underline p-3;
+          &:hover {
+            @apply underline;
+            color: currentColor;
+          }
         }
       }
     }
