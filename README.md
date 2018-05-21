@@ -1,8 +1,10 @@
 # Alcohol.org
 
-### Getting Started
+## Getting Started
+
+### Installing
 1. Clone the boilerplate:
-`git clone git@github.com:American-Addiction-Centers/wp-boilerplate.git alcohol.test`
+`git clone git@github.com:American-Addiction-Centers/wp-boilerplate.git alcohol.test && cd alcohol.test`
 
 1. Install PHP dependencies:
 `composer install`
@@ -11,7 +13,7 @@
 `cd web/app/themes`
 
 1. Clone the theme:
-`git clone git@github.com:American-Addiction-Centers/alcohol-org.git`
+`git clone git@github.com:American-Addiction-Centers/alcohol-org.git && cd alcohol-org`
 
 1. Install npm dependencies:
 `npm install`
