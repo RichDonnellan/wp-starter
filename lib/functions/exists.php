@@ -2,9 +2,15 @@
 /**
  * exists()
  *
- * Checks the value with isset and returns $mixed or empty string
+ * Checks whether a variable or object property exists. Replaces
+ * the repeated pattern: isset($mixed) ? $mixed : 'false value'
+ *
+ * @param mixed $name
+ * @param mixed $else
+ * @return mixed
+ *
  */
-function exists(&$mixed)
+function exists(&$mixed, $else = '')
 {
-    return (isset($mixed)) ? $mixed : '';
+    return (!empty($mixed)) ? $mixed : $else;
 }
