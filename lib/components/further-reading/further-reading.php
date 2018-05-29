@@ -5,7 +5,7 @@ function getLinks($relationship = 'children', $number_of_links = 15)
     global $post;
     $args = [
         'number' => $number_of_links,
-        'orderby' => 'rand',
+        'sort_column' => 'menu_order',
     ];
     if ($relationship === 'children') {
         $args['parent'] = $post->ID;
