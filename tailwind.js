@@ -46,7 +46,7 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
   'transparent-white-80': 'rgba(255,255,255,.8)',
-  'transparent-black-50': 'rgba(0,0,0,.5)',
+  'transparent-black-75': 'rgba(0,0,0,.75)',
   'black': '#000000',
   'white': '#ffffff',
   'aqua-haze': '#f6f8fa',
@@ -627,7 +627,8 @@ module.exports = {
     '20': 20,
     '30': 30,
     '40': 40,
-    '50': 50
+    '50': 50,
+    'modal': 9999
   },
 
   /*
@@ -645,10 +646,7 @@ module.exports = {
 
   opacity: {
     '0': '0',
-    '25': '.25',
     '40': '.4',
-    '50': '.5',
-    '60': '.6',
     '75': '.75',
     '95': '.95',
     '100': '1'
