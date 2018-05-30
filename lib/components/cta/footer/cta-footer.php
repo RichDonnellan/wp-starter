@@ -3,7 +3,7 @@
         <div class="relative text-white h2 <?= exists($data->modifier) ?>">
             <?= exists($data->content) ?>
             <div>Call 1-<?= CALLRAIL_PHONE ?></div>
-            <?= render('/lib/components/compliance/compliance.php', ['content' => 'Who Answers?', 'modifier' => 'justify-center text-sm']); ?>
+            <?= render('/lib/components/compliance/compliance.php', ['content' => 'Who Answers?', 'modifier' => 'inline-block text-sm text-white']); ?>
         </div>
     </div>
 </div>
