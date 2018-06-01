@@ -5,7 +5,7 @@
 
 .menu-overlay {
   $tt: .4s;
-  @apply flex flex-col justify-center items-center absolute pin w-screen bg-primary z-50 h-0 opacity-0 invisible;
+  @apply flex flex-col justify-center items-center absolute pin bg-primary z-50 h-0 opacity-0 invisible;
   transition: opacity $tt, visibility $tt, height $tt;
 
   &.is-active {
