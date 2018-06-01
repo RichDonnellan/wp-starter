@@ -8,6 +8,7 @@ function initConstants()
     $theme = wp_get_theme();
     define('THEME_NAME', $theme->get('Name'));
     define('THEME_URL', $theme->get('ThemeURI'));
+    define('CORP_NAME', $theme->get('Author'));
     define('THEME_VERSION', $theme->get('Version'));
     define('TEXT_DOMAIN', $theme->get('TextDomain'));
 
