@@ -1,0 +1,13 @@
+@tailwind preflight;
+@tailwind components;
+
+@import "utilities/index";
+@import "config/index";
+@import "helpers/index";
+@import "base/index";
+@import "layout/index";
+@import "components/index";
+@import "structure/index";
+
+@tailwind utilities;
+

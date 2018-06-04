@@ -1,0 +1,10 @@
+// Replaces last crumb with the ellipsis
+.breadcrumb_last {
+  @apply invisible;
+  font-size: 1px;
+
+  &:before {
+    @apply visible text-sm;
+    content: "\2026";
+  }
+}

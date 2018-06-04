@@ -1,0 +1,41 @@
+// ==========================================================================
+// Global config
+// ==========================================================================
+$image-path: '../images'; // relative to dist directory
+
+// =============
+// Anchor tags
+// ==============
+$link-text-color: config('colors.secondary');
+$link-text-color--hover: config('colors.secondary-400');
+
+// =============
+// Overlay
+// ==============
+$overlay--base: color(config('colors.black') a(config('opacity.40')));
+$overlay--tint: color(config('colors.primary') a(config('opacity.40')));
+
+// =============
+// Buttons
+// ==============
+$button-text-color: config('colors.white');
+$button-background-color: config('colors.secondary');
+$button-box-shadow: 0 rem(2) rem(8) 0 rgba(0,0,0,0.3);
+$button-border-radius: config('borderRadius.full');
+$button-background-color--hover: config('colors.secondary-400');
+$button-padding-x: rem(25);
+$button-padding-y: rem(10);
+
+// Button -- Large
+$button-text-size--large: rem(20);
+
+// =============
+// Text Selection
+// ==============
+$selection-text-color: config('colors.white');
+$selection-background-color: config('colors.secondary');
+
+// =============
+// Hero
+// ==============
+$hero-min-height: rem(450);

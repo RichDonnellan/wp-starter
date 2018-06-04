@@ -1,0 +1,13 @@
+#menu-footer-navigation {
+  @apply flex justify-center;
+  li {
+    @apply inline px-3 border-r;
+
+    &:last-child {
+      @apply border-none;
+    }
+  }
+  a {
+    @apply text-white;
+  }
+}

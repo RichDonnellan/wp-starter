@@ -1,0 +1,16 @@
+# Mac OS
+.DS_Store
+
+# Node
+node_modules
+
+# Generated content
+dist
+vendor
+
+# Editors
+.atom
+.vscode
+
+# Logs
+*.log

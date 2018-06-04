@@ -1,0 +1,26 @@
+.mission {
+  padding: rem(110) rem(30) rem(105);
+  background-color: config('colors.primary');
+  position: relative;
+  @screen md {
+    margin-right: rem(10);
+    width: calc(100%/3);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  // clear counter
+  color: config('colors.white');
+  counter-increment: mission;
+
+  &::before {
+    color: rgba(66, 106, 139, .8);
+    content: counter(mission);
+    font-size: rem(340);
+    font-weight: bold;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

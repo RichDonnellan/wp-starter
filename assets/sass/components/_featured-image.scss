@@ -1,0 +1,11 @@
+.featured-image {
+  $mh: rem(265);
+  &--full {
+    min-height: $mh;
+    @include background-image;
+  }
+  &--seo {
+    min-height: $mh;
+    @include background-image;
+  }
+}

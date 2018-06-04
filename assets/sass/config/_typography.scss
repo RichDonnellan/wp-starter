@@ -1,0 +1,10 @@
+$font-family: Lato, Verdana, Helvetica, sans-serif;
+$base--font-size: 16;
+
+// Headings are set in _base.scss
+$headings: (
+  h1: config('textSizes.4xl'),
+  h2: config('textSizes.2xl'),
+  h3: config('textSizes.xl'),
+  h4: config('textSizes.base'),
+);

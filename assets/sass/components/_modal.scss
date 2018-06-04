@@ -1,0 +1,76 @@
+.modal {
+  &__overlay {
+    @apply flex justify-center items-center fixed pin z-modal bg-transparent-black-75;
+  }
+  &__container {
+    @apply bg-white p-6 overflow-y-auto rounded max-h-screen;
+    max-width: max-w-full;
+    @screen md {
+      max-width: rem(500);
+    }
+    
+  }
+  &__header {
+    @apply flex items-center justify-between mb-4;
+  }
+  &__title {
+    @apply font-bold;
+  }
+  &__close {
+    @apply text-4xl;
+  }
+  &__content {
+    p {
+      @apply mb-6;
+    }
+  }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; visibility: hidden }
+      to { opacity: 1; visibility: visible }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; visibility: visible }
+      to { opacity: 0; visibility: hidden }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(15%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slideOut {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10%); }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: fadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: slideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: fadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: slideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}

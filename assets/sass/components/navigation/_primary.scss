@@ -1,0 +1,58 @@
+@screen md {
+  $tt: .3s;
+  $active-border-thickness: 2px;
+  #menu-primary-navigation {
+    @apply flex text-white;
+
+    /* First level */
+    & > .menu-item {
+      @apply flex relative;
+      border-bottom: $active-border-thickness solid transparent;
+      transition: border-bottom $tt;
+
+      &:hover {
+        border-bottom: $active-border-thickness solid currentColor;
+      }
+      & > a {
+        @apply flex items-center px-6 no-underline;
+        color: currentColor;
+      }
+    }
+  }
+
+  .menu-item-has-children {
+    /* Down triangle */
+    &::before {
+      color: currentColor;
+      content: "\025BE";
+      position: absolute;
+      right: 0.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    & > .sub-menu {
+      @apply flex flex-wrap absolute z-10 bg-primary-500 invisible opacity-0 text-sm list-reset p-4;
+      width: 35rem;
+      top: calc(100% + #{$active-border-thickness});
+      left: 0;
+      white-space: nowrap;
+      word-wrap: normal;
+      transition: opacity $tt, visibility $tt;
+
+      & .menu-item {
+        width: calc(100% / 3);
+
+        & > a {
+          @apply text-white flex items-center no-underline p-3;
+          &:hover {
+            @apply underline;
+            color: currentColor;
+          }
+        }
+      }
+    }
+    &:hover > .sub-menu, & > a:focus + .sub-menu {
+      @apply visible opacity-100;
+    }
+  }
+}
