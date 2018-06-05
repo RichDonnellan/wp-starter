@@ -1,7 +1,6 @@
 <?php
 
-namespace Aac\Alcohol;
-
+add_filter('rwmb_meta_boxes', 'createCustomMetaBoxes');
 function createCustomMetaBoxes(array $meta_boxes)
 {
     $prefix = 'alc-';
@@ -24,4 +23,3 @@ function createCustomMetaBoxes(array $meta_boxes)
 
     return $meta_boxes;
 }
-add_filter( 'rwmb_meta_boxes', __NAMESPACE__ . '\createCustomMetaBoxes' );

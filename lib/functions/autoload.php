@@ -10,8 +10,6 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 
-namespace Aac\Alcohol;
-
 function loadThemeFiles()
 {
     $required_files = [
