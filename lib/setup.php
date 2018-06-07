@@ -51,3 +51,21 @@ function setupTheme()
     registerNavMenus($menus);
     registerImageSizes($registered_image_sizes);
 }
+
+add_action('init', 'registerPostTypes');
+function registerPostTypes()
+{
+    registerContentMarketingPostType();
+}
+
+add_filter('single_template', 'setSingleTemplateForCustomPostTypes');
+function setSingleTemplates()
+{
+    setSingleTemplateForCustomPostTypes();
+}
+
+add_filter('archive_template', 'setArchiveTemplateForCustomPostTypes');
+function setArchiveTemplates()
+{
+    setArchiveTemplateForCustomPostTypes();
+}

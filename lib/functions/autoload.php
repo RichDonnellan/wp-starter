@@ -22,6 +22,9 @@ function loadThemeFiles()
         'lib/functions/featured-image.php',
         'lib/functions/exists.php',
         'lib/functions/meta-boxes.php',
+        'lib/functions/custom-post-types.php',
+
+        'lib/post-types/content-marketing.php',
 
         'lib/setup.php',
     ];
