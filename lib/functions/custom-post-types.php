@@ -79,8 +79,10 @@ function getPostTypePages($post_type)
     global $post;
     $args = [
         'post_type' => $post_type,
+        'numberposts' => -1,
     ];
-    if ($post->post_type === $post_type) return get_pages($args);
+
+    if ($post->post_type === $post_type) return get_posts($args);
 }
 
 /**
