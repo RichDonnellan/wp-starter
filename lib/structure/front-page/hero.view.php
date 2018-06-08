@@ -7,5 +7,6 @@
             <?= exists($data->subtitle) ?>
         </p>
         <?= render('/lib/components/buttons/button-phone.php', ['phone' => CALLRAIL_PHONE, 'content' => 'Call '.CALLRAIL_PHONE, 'modifier' => 'button--large mt-4']); ?>
+        <?= render('/lib/components/compliance/compliance.php', ['content' => 'Who Answers?', 'modifier' => 'text-white mt-4']); ?>
     </div>
 </div>
