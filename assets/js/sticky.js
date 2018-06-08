@@ -2,6 +2,9 @@
 let setTopMarginOnHeader = () => {
   const header = document.querySelector('header');
   const offset = document.querySelector('[data-js="header-margin-offset"]');
+
+  if (!offset) return;
+
   header.style.marginTop =
     offset.offsetHeight > 0 ? `${offset.offsetHeight}px` : null;
 };
@@ -11,6 +14,9 @@ setTopMarginOnHeader();
 let setBottomMarginOnFooter = () => {
   const footer = document.querySelector('footer');
   const offset = document.querySelector('[data-js="footer-margin-offset"]');
+
+  if (!offset) return;
+
   footer.style.marginBottom =
     offset.offsetHeight > 0 ? `${offset.offsetHeight}px` : null;
 };

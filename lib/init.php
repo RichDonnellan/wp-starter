@@ -12,6 +12,7 @@ function initConstants()
     define('THEME_VERSION', $theme->get('Version'));
     define('TEXT_DOMAIN', $theme->get('TextDomain'));
 
+    define('SITE_URL', WP_HOME);
     define('THEME_DIR', get_template_directory());
     define('THEME_DIR_URI', get_template_directory_uri());
     define('IMAGE_DIR', '/dist/images/');
