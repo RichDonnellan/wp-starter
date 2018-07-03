@@ -13,6 +13,11 @@
     @apply font-bold mb-6;
   }
 
+  hr {
+    border: 1px solid config('colors.light-500');
+    margin: rem(45) 0;
+  }
+
   p:empty {
     display: none;
   }
