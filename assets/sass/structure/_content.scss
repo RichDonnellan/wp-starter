@@ -2,7 +2,8 @@
 .page article,
 .post article,
 .error404 article,
-.content-marketing-template-default article {
+.single article,
+.archive article {
   max-width: rem(900);
 
   h1,
@@ -11,6 +12,11 @@
   h4 {
     @apply font-bold mb-6;
   }
+
+  p:empty {
+    display: none;
+  }
+
   p, ul, ol {
     @apply mb-6;
   }
