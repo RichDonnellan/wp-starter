@@ -51,7 +51,7 @@
         }
       }
     }
-    &:hover > .sub-menu, & > a:focus + .sub-menu {
+    &:hover > .sub-menu, & > a:focus + .sub-menu, &:focus-within > a + .sub-menu {
       @apply visible opacity-100;
     }
   }
