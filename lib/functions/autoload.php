@@ -23,6 +23,7 @@ function loadThemeFiles()
         'lib/functions/exists.php',
         'lib/functions/meta-boxes.php',
         'lib/functions/custom-post-types.php',
+        'lib/functions/process-shortcodes.php',
 
         'lib/post-types/content-marketing.php',
 
