@@ -15,13 +15,13 @@ function processShortcode($user_defined_attributes, $the_content = null, $shortc
     ));
 
     ob_start();
-    include(THEME_DIR . "/lib/shortcodes/$shortcode_name/$shortcode_name.view.php");
+    include(THEME_DIR . "/lib/shortcodes/$shortcode_name/$shortcode_name.php");
     return ob_get_clean();
 }
 
 function getShortcodeConfiguration($shortcode_name)
 {
-    return include(THEME_DIR . "/lib/shortcodes/$shortcode_name/$shortcode_name.php");
+    return include(THEME_DIR . "/lib/shortcodes/$shortcode_name/$shortcode_name.config.php");
 }
 
 function loadShortcodes()
