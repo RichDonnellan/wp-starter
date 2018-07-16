@@ -1,0 +1,26 @@
+.quote {
+  $this: &;
+  @apply font-bold text-2xl p-4 my-9 overflow-hidden;
+
+  &--is-sourced::before {
+    content: '\201c';
+  }
+  &--is-sourced::after {
+    content: '\201d';
+  }
+  &__source {
+    @apply italic text-sm font-normal text-right;
+  }
+  &--is-left {
+    @apply float-none;
+    @screen md {
+      @apply float-left w-2/5 mr-8;
+    }
+  }
+  &--is-right {
+    @apply float-none;
+    @screen md {
+      @apply float-right w-2/5 ml-8
+    }
+  }
+}
