@@ -24,6 +24,12 @@ function getShortcodeConfiguration($shortcode_name)
     return include(THEME_DIR . "/lib/shortcodes/$shortcode_name/$shortcode_name.config.php");
 }
 
+function setPositionClass($shortcode_name, $position)
+{
+    if (!$position) return;
+    return $shortcode_name . '--is-' . $position;
+}
+
 function loadShortcodes()
 {
     $shortcodes = getDirectories();
