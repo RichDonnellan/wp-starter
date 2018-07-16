@@ -11,13 +11,26 @@
         {
             "type": "composer",
             "url": "https://my.yoast.com/packages/"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "gravityforms/gravityforms",
+                "version": "2.3.2.15",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.2.15.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1531857125&Signature=fVbWvWRCxDZT%2F1CDSOoeiMIaLhM%3D"
+                }
+            }
         }
     ],
     "require": {
         "php": ">=7.0",
         "composer/installers": "^1.5",
         "wpackagist-plugin/wordfence":"^7.1",
-        "wpackagist-plugin/meta-box":"^4.14"
+        "wpackagist-plugin/meta-box":"^4.14",
+        "gravityforms/gravityforms":"2.3.2.15"
     },
     "require-dev": {
         "wp-cli/wp-cli": "^1.5"
