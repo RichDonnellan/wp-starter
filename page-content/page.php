@@ -2,4 +2,4 @@
 global $post;
 
 $title = esc_html($post->post_title);
-$content = wpautop($post->post_content);
+$content = wpautop(do_shortcode($post->post_content));
