@@ -2,7 +2,7 @@
   $this: &;
   @apply bg-aqua-haze p-8 mb-6 overflow-hidden;
   &__title {
-    @apply font-bold text-center mb-4;
+    @apply font-bold text-center mb-4 text-lg;
   }
   &__content {
     column-count: 1;
