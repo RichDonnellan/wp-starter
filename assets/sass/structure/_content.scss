@@ -43,4 +43,12 @@
   ol > li {
     @apply pl-3;
   }
+
+  // Per WP Codex (with modifications): https://codex.wordpress.org/Styling_Images_in_Posts_and_Pages
+  img.alignright { float: right; margin: 0 0 2.5rem 2.5rem }
+  img.alignleft { float: left; margin: 0 2.5rem 2.5rem 0 }
+  img.aligncenter { display: block; margin-left: auto; margin-right: auto }
+  a img.alignright { float: right; margin: 0 0 2.5rem 2.5rem }
+  a img.alignleft { float: left; margin: 0 2.5rem 2.5rem 0 }
+  a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 }
