@@ -22,13 +22,16 @@
   &--is-left {
     @apply float-none;
     @screen md {
-      @apply float-left w-2/5;
+      @apply float-left w-2/5 mr-6;
+    }
+    #{$this}__content {
+      column-count: 1;
     }
   }
   &--is-right {
     @apply float-none;
     @screen md {
-      @apply float-right w-2/5;
+      @apply float-right w-2/5 ml-6;
     }
     #{$this}__content {
       column-count: 1;
