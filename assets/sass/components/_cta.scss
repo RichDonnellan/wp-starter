@@ -8,4 +8,12 @@
       background-image: image('cta-footer@2x.jpg');
     }
   }
+  &--sticky-mobile {
+    transform: translateY(100%);
+    transition: transform .5s;
+
+    &.is-active {
+      transform: translateY(0);
+    }
+  }
 }

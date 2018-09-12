@@ -20,3 +20,29 @@ let rafCallbacks = [setTopMarginOnHeader];
     });
   };
 })(rafCallbacks);
+
+// Handles visibility of the "sticky" mobile cta
+{
+  const cta = document.querySelector('[data-js="cta-sticky-mobile"]');
+  let lastKnownScrollY = 0;
+  let currentScrollY = 0;
+
+  let handleMobileStickyCTA = () => {
+
+    if (!cta) return;
+
+    currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastKnownScrollY) {
+      cta.classList.add('is-active');
+    }
+    if (currentScrollY < lastKnownScrollY) {
+      cta.classList.remove('is-active');
+    }
+
+    lastKnownScrollY = currentScrollY;
+  }
+
+  window.addEventListener('scroll', handleMobileStickyCTA, false);
+
+}
