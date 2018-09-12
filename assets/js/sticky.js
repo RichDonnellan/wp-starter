@@ -8,22 +8,9 @@ let setTopMarginOnHeader = () => {
   header.style.marginTop =
     offset.offsetHeight > 0 ? `${offset.offsetHeight}px` : null;
 };
-
 setTopMarginOnHeader();
 
-let setBottomMarginOnFooter = () => {
-  const footer = document.querySelector('footer');
-  const offset = document.querySelector('[data-js="footer-margin-offset"]');
-
-  if (!offset) return;
-
-  footer.style.marginBottom =
-    offset.offsetHeight > 0 ? `${offset.offsetHeight}px` : null;
-};
-
-setBottomMarginOnFooter();
-
-let rafCallbacks = [setTopMarginOnHeader, setBottomMarginOnFooter];
+let rafCallbacks = [setTopMarginOnHeader];
 
 (function resize(cb) {
   window.onresize = e => {
@@ -33,16 +20,3 @@ let rafCallbacks = [setTopMarginOnHeader, setBottomMarginOnFooter];
     });
   };
 })(rafCallbacks);
-
-// Works! Just need to figure out how to implement RAF
-// function setDynamicSpacingForStickyElement(targetEl, offsetEl, prop) {
-//     let el = document.querySelector(targetEl);
-//     let offset = document.querySelector(offsetEl);
-//   el.style[prop] = offset.offsetHeight > 0 ? `${offset.offsetHeight}px` : null;
-// }
-
-// const header = setDynamicSpacingForStickyElement;
-// const footer = setDynamicSpacingForStickyElement;
-
-// header('header', '[data-js="header-margin-offset"]', 'marginTop');
-// footer('footer', '[data-js="footer-margin-offset"]', 'marginBottom');
