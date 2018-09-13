@@ -3,8 +3,8 @@
         <div class="mb-5">
             <?= render('/lib/partials/logo.svg'); ?>
         </div>
-        <div class="mb-5">
-            <img src="<?= imagePath("aac_horiz_white.png"); ?>" alt="" width="280px">
+        <div class="mb-5 md:ml-5">
+            <?= render('/lib/partials/logo-aac.svg'); ?>
         </div>
     </div>
     <div class="container text-white text-center">

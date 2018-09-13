@@ -8,22 +8,9 @@ let setTopMarginOnHeader = () => {
   header.style.marginTop =
     offset.offsetHeight > 0 ? `${offset.offsetHeight}px` : null;
 };
-
 setTopMarginOnHeader();
 
-let setBottomMarginOnFooter = () => {
-  const footer = document.querySelector('footer');
-  const offset = document.querySelector('[data-js="footer-margin-offset"]');
-
-  if (!offset) return;
-
-  footer.style.marginBottom =
-    offset.offsetHeight > 0 ? `${offset.offsetHeight}px` : null;
-};
-
-setBottomMarginOnFooter();
-
-let rafCallbacks = [setTopMarginOnHeader, setBottomMarginOnFooter];
+let rafCallbacks = [setTopMarginOnHeader];
 
 (function resize(cb) {
   window.onresize = e => {
@@ -34,15 +21,29 @@ let rafCallbacks = [setTopMarginOnHeader, setBottomMarginOnFooter];
   };
 })(rafCallbacks);
 
-// Works! Just need to figure out how to implement RAF
-// function setDynamicSpacingForStickyElement(targetEl, offsetEl, prop) {
-//     let el = document.querySelector(targetEl);
-//     let offset = document.querySelector(offsetEl);
-//   el.style[prop] = offset.offsetHeight > 0 ? `${offset.offsetHeight}px` : null;
-// }
+// Handles visibility of the "sticky" mobile cta
+{
+  const footerOffset = document.querySelector('[data-js="offset-cta-sticky-mobile"]');
+  const cta = document.querySelector('[data-js="cta-sticky-mobile"]');
+  let lastKnownScrollY = 0;
+  let currentScrollY = 0;
 
-// const header = setDynamicSpacingForStickyElement;
-// const footer = setDynamicSpacingForStickyElement;
+  let handleMobileStickyCTA = () => {
+    if (!cta) return;
 
-// header('header', '[data-js="header-margin-offset"]', 'marginTop');
-// footer('footer', '[data-js="footer-margin-offset"]', 'marginBottom');
+    currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastKnownScrollY) {
+      cta.classList.add('is-active');
+      footerOffset.style.paddingBottom = `${cta.offsetHeight}px`;
+    }
+    if (currentScrollY < lastKnownScrollY) {
+      cta.classList.remove('is-active');
+      footerOffset.style.paddingBottom = 0;
+    }
+
+    lastKnownScrollY = currentScrollY;
+  };
+
+  window.addEventListener('scroll', handleMobileStickyCTA, false);
+}
