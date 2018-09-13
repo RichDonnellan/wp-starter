@@ -1,4 +1,4 @@
-<footer role="contentinfo">
+<footer role="contentinfo" data-js="offset-cta-sticky-mobile">
     <?= exists($cta_footer) ?>
     <div class="bg-primary border-t border-primary-400">
         <div class="container flex flex-col justify-center items-center py-4 text-white text-sm md:flex-row">
