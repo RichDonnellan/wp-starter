@@ -8,6 +8,6 @@
         </div>
     </div>
     <div class="container text-white text-center">
-        <p class="text-xs"><?= THEME_NAME ?> is an <?= CORP_NAME ?> subsidiary. Learn more about what this means <a href="/about/">here</a>.</p>
+        <p class="text-sm"><?= THEME_NAME ?> is an <?= CORP_NAME ?> subsidiary. Not sure what this means?  Learn more <a href="/about/" class="text-white hover:text-white">about AAC.</a></p>
     </div>
 </div>
