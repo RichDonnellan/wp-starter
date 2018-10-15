@@ -1,4 +1,4 @@
-<div class="cta--sidebar hidden invisible md:visible md:flex md:mb-8">
+<div class="cta--sidebar flex mb-8">
     <div class="flex flex-col container justify-center items-center py-4">
         <div class="text-white text-center">
             <p class="text-xl font-bold mb-2">Ready to Get Clean & Sober?</p>
