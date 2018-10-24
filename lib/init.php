@@ -19,6 +19,7 @@ function initConstants()
     define('DIST_URL', THEME_DIR_URI . '/dist/');
 
     define('CALLRAIL_PHONE', '888-685-5770');
+    define('GTM_ID', 'WN6PR9C');
 }
 
 initConstants();

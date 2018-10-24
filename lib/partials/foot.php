@@ -1,6 +1,3 @@
-<?php
-wp_footer();
-include(THEME_DIR . '/lib/partials/google-tag-manager.php');
-?>
+<?php wp_footer(); ?>
 </body>
 </html>
