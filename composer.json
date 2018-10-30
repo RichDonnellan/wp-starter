@@ -1,8 +1,7 @@
 {
     "name": "aac/alcohol-org",
     "type": "project",
-    "description":
-        "Custom theme for Alcohol.org",
+    "description": "Custom theme for Alcohol.org",
     "repositories": [
         {
             "type": "composer",
@@ -16,11 +15,11 @@
             "type": "package",
             "package": {
                 "name": "gravityforms/gravityforms",
-                "version": "2.3.2.15",
+                "version": "2.3.6",
                 "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
-                    "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.2.15.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1531857125&Signature=fVbWvWRCxDZT%2F1CDSOoeiMIaLhM%3D"
+                    "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541007403&Signature=fr234sm8lLcM7DjuDP1JXUq9qmQ%3D"
                 }
             }
         }
@@ -28,17 +27,21 @@
     "require": {
         "php": ">=7.0",
         "composer/installers": "^1.5",
-        "wpackagist-plugin/wordfence":"^7.1",
-        "wpackagist-plugin/meta-box":"^4.14",
-        "gravityforms/gravityforms":"2.3.2.15"
+        "wpackagist-plugin/wordfence": "^7.1",
+        "wpackagist-plugin/meta-box": "^4.14",
+        "gravityforms/gravityforms": "2.3.6"
     },
     "require-dev": {
         "wp-cli/wp-cli": "^1.5"
     },
     "extra": {
         "installer-paths": {
-            "../../mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-            "../../plugins/{$name}/": ["type:wordpress-plugin"]
+            "../../mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "../../plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ]
         }
     },
     "scripts": {
