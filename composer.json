@@ -15,11 +15,11 @@
             "type": "package",
             "package": {
                 "name": "gravityforms/gravityforms",
-                "version": "2.3.6",
+                "version": "2.3.6.6",
                 "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
-                    "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1541007403&Signature=fr234sm8lLcM7DjuDP1JXUq9qmQ%3D"
+                    "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_2.3.6.6.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1542328080&Signature=iSrWDUW4RUzPTlGSjKkit2N5KME%3D"
                 }
             }
         }
@@ -29,7 +29,7 @@
         "composer/installers": "^1.5",
         "wpackagist-plugin/wordfence": "^7.1",
         "wpackagist-plugin/meta-box": "^4.14",
-        "gravityforms/gravityforms": "2.3.6"
+        "gravityforms/gravityforms": "2.3.6.6"
     },
     "require-dev": {
         "wp-cli/wp-cli": "^1.5"
