@@ -9,15 +9,16 @@
         "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "author": "American Addiction Centers, Inc.",
-    "license": "proprietary",
+    "license": "UNLICENSED",
+    "repository": "https://github.com/American-Addiction-Centers/alcohol-org",
     "dependencies": {
         "micromodal": "^0.3.2"
     },
     "devDependencies": {
-        "browser-sync": "^2.24.5",
+        "browser-sync": "^2.26.3",
         "browser-sync-webpack-plugin": "^2.2.2",
-        "laravel-mix": "^2.1.11",
+        "laravel-mix": "^2.1.14",
         "postcss-color-function": "^4.0.1",
-        "tailwindcss": "^0.6.1"
+        "tailwindcss": "^0.7.2"
     }
 }
