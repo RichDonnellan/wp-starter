@@ -1,4 +1,7 @@
 .overlay {
+  $overlay--base: color(config('colors.black') a(config('opacity.40')));
+  $overlay--tint: color(config('colors.primary') a(config('opacity.40')));
+
   &--base {
     position: relative;
       &::before {
