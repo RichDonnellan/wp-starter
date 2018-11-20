@@ -3,7 +3,7 @@
 render('/lib/structure/footer-partnership.view.php');
 
 if(!isPostType('content-marketing')) {
-    $cta_footer = render('/lib/components/cta/footer/cta-footer.php', ['content' => 'Recovery is Worth Fighting For. We’ll Help You.']);
+    $cta_footer = render('/lib/components/cta/footer/cta-footer.php', ['content' => 'Recovery is Worth Fighting For. We\'ll Help You.']);
 }
 
 render('/lib/structure/footer.view.php');
