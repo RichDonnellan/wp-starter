@@ -116,7 +116,7 @@ module.exports = {
     sm: '480px',
     md: '768px',
     lg: '992px',
-    xl: '1200px'
+    xl: '1200px',
   },
 
   /*
@@ -138,7 +138,9 @@ module.exports = {
   */
 
   fonts: {
-    sans: ['Lato', 'Verdana', 'Helvetica', 'sans-serif']
+    sans: ['Montserrat', 'Verdana', 'Helvetica', 'sans-serif'],
+    serif: ['Raleway', 'Verdana', 'Helvetica', 'sans-serif'],
+    handwritten: ['"Shadows Into Light"', '"Comic Sans"', 'cursive'],
   },
 
   /*
@@ -169,7 +171,7 @@ module.exports = {
     '2xl': '1.625rem', // 26px
     '3xl': '1.875rem', // 30px
     '4xl': '2.25rem', // 36px
-    '5xl': '3rem' // 48px
+    '5xl': '3rem', // 48px
   },
 
   /*
@@ -188,7 +190,7 @@ module.exports = {
 
   fontWeights: {
     normal: 400,
-    bold: 700
+    bold: 700,
   },
 
   /*
@@ -207,7 +209,7 @@ module.exports = {
     none: 1,
     tight: 1.25,
     normal: 1.5,
-    loose: 2
+    loose: 2,
   },
 
   /*
@@ -225,7 +227,7 @@ module.exports = {
   tracking: {
     tight: '-0.05em',
     normal: '0',
-    wide: '0.05em'
+    wide: '0.05em',
   },
 
   /*
@@ -276,7 +278,7 @@ module.exports = {
     '0': '0',
     '2': '2px',
     '4': '4px',
-    '8': '8px'
+    '8': '8px',
   },
 
   /*
@@ -319,7 +321,7 @@ module.exports = {
     sm: '.125rem', // 2px
     default: '.25rem', // 4px
     lg: '.5rem', // 8px
-    full: '9999px'
+    full: '9999px',
   },
 
   /*
@@ -370,7 +372,7 @@ module.exports = {
     '1/6': '16.66667%',
     '5/6': '83.33333%',
     full: '100%',
-    screen: '100vw'
+    screen: '100vw',
   },
 
   /*
@@ -406,7 +408,7 @@ module.exports = {
     '48': '12rem',
     '64': '16rem',
     full: '100%',
-    screen: '100vh'
+    screen: '100vh',
   },
 
   /*
@@ -425,7 +427,7 @@ module.exports = {
 
   minWidth: {
     '0': '0',
-    full: '100%'
+    full: '100%',
   },
 
   /*
@@ -445,7 +447,7 @@ module.exports = {
   minHeight: {
     '0': '0',
     full: '100%',
-    screen: '100vh'
+    screen: '100vh',
   },
 
   /*
@@ -473,7 +475,7 @@ module.exports = {
     '3xl': '80rem',
     '4xl': '90rem',
     '5xl': '100rem',
-    full: '100%'
+    full: '100%',
   },
 
   /*
@@ -492,7 +494,7 @@ module.exports = {
 
   maxHeight: {
     full: '100%',
-    screen: '100vh'
+    screen: '100vh',
   },
 
   /*
@@ -522,7 +524,7 @@ module.exports = {
     '7': '1.625rem', // 26px
     '8': '2rem', // 32px
     '9': '2.5rem', // 40px
-    '10': '3.75rem' // 60px
+    '10': '3.75rem', // 60px
   },
 
   /*
@@ -553,7 +555,7 @@ module.exports = {
     '7': '1.625rem',
     '8': '2rem',
     '9': '2.5rem',
-    '10': '3.75rem'
+    '10': '3.75rem',
   },
 
   /*
@@ -579,7 +581,7 @@ module.exports = {
     '3': '0.75rem',
     '4': '1rem',
     '6': '1.5rem',
-    '8': '2rem'
+    '8': '2rem',
   },
 
   /*
@@ -604,7 +606,7 @@ module.exports = {
     md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
     lg: '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
     inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
-    none: 'none'
+    none: 'none',
   },
 
   /*
@@ -629,7 +631,7 @@ module.exports = {
     '30': 30,
     '40': 40,
     '50': 50,
-    'modal': 9999
+    modal: 9999,
   },
 
   /*
@@ -650,7 +652,7 @@ module.exports = {
     '40': '.4',
     '75': '.75',
     '95': '.95',
-    '100': '1'
+    '100': '1',
   },
 
   /*
@@ -668,7 +670,7 @@ module.exports = {
   */
 
   svgFill: {
-    current: 'currentColor'
+    current: 'currentColor',
   },
 
   /*
@@ -686,7 +688,7 @@ module.exports = {
   */
 
   svgStroke: {
-    current: 'currentColor'
+    current: 'currentColor',
   },
 
   /*
@@ -748,7 +750,7 @@ module.exports = {
     visibility: ['responsive'],
     whitespace: ['responsive'],
     width: ['responsive'],
-    zIndex: ['responsive']
+    zIndex: ['responsive'],
   },
 
   /*
@@ -768,8 +770,8 @@ module.exports = {
   plugins: [
     require('tailwindcss/plugins/container')({
       center: true,
-      padding: '.5rem' // 8px
-    })
+      padding: '.5rem', // 8px
+    }),
   ],
 
   /*
@@ -785,6 +787,6 @@ module.exports = {
   options: {
     prefix: '',
     important: false,
-    separator: ':'
-  }
+    separator: ':',
+  },
 };
