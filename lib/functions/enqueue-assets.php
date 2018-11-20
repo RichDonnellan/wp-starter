@@ -46,7 +46,7 @@ function enqueueAssets()
     add_action('wp_enqueue_scripts', function () {
         enqueueFiles('css');
         enqueueFiles('js');
-        enqueueFont('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+        enqueueFont('https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:400,500,700|Shadows+Into+Light');
         enqueueScript('callrail', '//cdn.callrail.com/companies/885043551/9fc0b0e7540344aa6301/12/swap.js');
     });
 }
