@@ -1,0 +1,23 @@
+@mixin set-cta-arrow($orientation: ul, $width: 35px, $height: 80px) {
+  content: '';
+  background-image: image('curved-arrow.svg');
+  background-size: $width $height;
+  position: absolute;
+  width: $width;
+  height: $height;
+
+  @if $orientation == ul {
+    transform: initial;
+  } @else if $orientation == dl {
+    transform: rotateY(360deg) rotateX(180deg);
+  }
+}
+
+@mixin create-cta-arrows() {
+  $orientations: (ul, dl);
+  @each $orient in $orientations {
+    &--has-arrow\:#{$orient}::after {
+      @include set-cta-arrow($orientation: #{$orient});
+    }
+  }
+}
