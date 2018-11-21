@@ -5,6 +5,6 @@
     </div>
     <div class="items-center flex flex-col">
         <?= render('/lib/components/buttons/button-phone.php', ['phone' => CALLRAIL_PHONE, 'content' => 'Call 1-' . CALLRAIL_PHONE, 'modifier' => 'inline-block mb-4 text-lg']); ?>
-        <?= render('/lib/components/compliance/compliance.php', ['content' => 'Who Answers?', 'modifier' => 'text-white text-sm']); ?>
+        <?= render('/lib/components/compliance/compliance.php'); ?>
     </div>
 </div>

@@ -5,6 +5,6 @@
             <p class="font-bold">Give us a call anytime 24/7</p>
         </div>
         <?= render('/lib/components/buttons/button-phone.php', ['phone' => CALLRAIL_PHONE, 'content' => 'Call 1-' . CALLRAIL_PHONE, 'modifier' => 'my-5']); ?>
-        <?= render('/lib/components/compliance/compliance.php', ['content' => 'Who Answers?', 'modifier' => 'text-white text-sm']); ?>
+        <?= render('/lib/components/compliance/compliance.php'); ?>
     </div>
 </div>
