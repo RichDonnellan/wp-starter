@@ -1,5 +1,5 @@
 @screen md {
-  $tt: .3s;
+  $tt: 0.3s;
   $active-border-thickness: 2px;
   #menu-primary-navigation {
     @apply flex text-white;
@@ -14,7 +14,7 @@
         border-bottom: $active-border-thickness solid currentColor;
       }
       & > a {
-        @apply flex items-center px-6 no-underline;
+        @apply flex items-center px-5 no-underline;
         color: currentColor;
       }
     }
@@ -24,9 +24,9 @@
     /* Down triangle */
     &::before {
       color: currentColor;
-      content: "\025BE";
+      content: '\025BE';
       position: absolute;
-      right: 0.6rem;
+      right: 0.4rem;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -51,8 +51,33 @@
         }
       }
     }
-    &:hover > .sub-menu, & > a:focus + .sub-menu, &:focus-within > a + .sub-menu {
+    &:hover > .sub-menu,
+    & > a:focus + .sub-menu,
+    &:focus-within > a + .sub-menu {
       @apply visible opacity-100;
+    }
+  }
+}
+
+// Super hacky: Handle navigation items when things get a bit smooshed due to the new CTA in header.
+#menu-primary-navigation {
+  .menu-more {
+    display: flex;
+    visibility: visible;
+  }
+  > li:not(.menu-item-has-children) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @screen xl {
+    .menu-more {
+      display: none;
+      visibility: hidden;
+    }
+    > li:not(.menu-item-has-children) {
+      display: flex;
+      visibility: visible;
     }
   }
 }
