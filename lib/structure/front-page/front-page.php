@@ -4,6 +4,20 @@ render('/lib/structure/front-page/front-page.view.php', [
         'title' => 'We Strive to Illuminate the Serious Toll of Alcoholism.',
         'subtitle' => 'If someone you care about needs help in taking the first step towards recovery, please call our American Addiction Centers helpline. We are open 24/7, 365 days a year.',
     ],
+    'stats' => (object) [
+        (object) [
+            'stat' => '6',
+            'content' => 'Six people die every day from alcohol poisoning according to the <a href="https://www.cdc.gov/media/releases/2015/p0106-alcohol-poisoning.html" target="_blank">Centers for Disease Control</a>.',
+        ],
+        (object) [
+            'stat' => '4,700',
+            'content' => 'More than 4,700 people die every year as a result of teenage alcohol use.',
+        ],
+        (object) [
+            'stat' => '21%',
+            'content' => 'As many as 21 percent of high school students engaged in binge drinking within the past month.',
+        ],
+    ],
     'mission' => (object) [
         (object) [
             'statement' => 'We strive',

@@ -1,3 +1,25 @@
+.stats {
+  div:first-child {
+    @apply rounded-tl rounded-tr;
+    @screen md {
+      @apply rounded-tr-none rounded-bl;
+    }
+  }
+  div:not(:first-child) {
+    box-shadow: inset 0 30px 60px 0 config('colors.transparent-black-5');
+
+    @screen md {
+      box-shadow: inset 30px 0 60px 0 config('colors.transparent-black-5');
+    }
+  }
+  div:last-child {
+     @apply rounded-br rounded-bl;
+     @screen md {
+      @apply rounded-tr rounded-bl-none;
+     }
+  }
+}
+
 .mission {
   padding: rem(110) rem(30) rem(105);
   background-color: config('colors.primary');
