@@ -69,12 +69,12 @@ let colors = {
   'dark-400': '#181818',
   'dark-500': '#0a0a0a',
 
-  'light-100': '#ffffff',
-  'light-200': '#ffffff',
+  'light-100': '#e8edf1',
+  'light-200': '#f7f7f7',
   'light': '#ffffff',
   'light-400': '#e8e8e8',
   'light-500': '#cccccc',
-}
+};
 
 module.exports = {
   /*
@@ -582,6 +582,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '16': '4rem',
   },
 
   /*
