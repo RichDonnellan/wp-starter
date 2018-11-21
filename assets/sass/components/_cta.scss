@@ -11,13 +11,9 @@
   }
 
   &--footer {
-    background-image: image('cta-footer-mobile@2x.jpg');
-    background-size: cover;
-    min-height: rem(260);
-
-    @screen sm {
-      background-image: image('cta-footer@2x.jpg');
-    }
+    @include background-image;
+    background-image: image('cta-footer.jpg');
+    min-height: rem(400);
   }
 
   &--sticky-mobile {
