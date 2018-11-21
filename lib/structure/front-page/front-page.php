@@ -1,9 +1,8 @@
 <?php
 render('/lib/structure/front-page/front-page.view.php', [
     'hero' => (object) [
-        'title' => 'We strive to illuminate the serious toll of alcoholism.',
-        'subtitle' => 'If someone you care about needs help in taking the first step towards recovery, please give us a call.',
-        'modifier' => 'text-shadow--base',
+        'title' => 'We Strive to Illuminate the Serious Toll of Alcoholism.',
+        'subtitle' => 'If someone you care about needs help in taking the first step towards recovery, please call our American Addiction Centers helpline. We are open 24/7, 365 days a year.',
     ],
     'mission' => (object) [
         (object) [
