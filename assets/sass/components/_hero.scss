@@ -1,14 +1,8 @@
-// this is a comment
 .hero {
   @include background-image;
-  background-image: image('bottle-mobile@2x.jpg');
-
-  @screen md {
-    @include background-image($position: top center);
-    background-image: image('bottle@2x.jpg');
-  }
+  background-image: image('man-drinking-whiskey.jpg');
 
   & .container {
-    min-height: $hero-min-height;
+    min-height: rem(600);
   }
 }
