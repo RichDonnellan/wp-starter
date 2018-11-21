@@ -7,9 +7,6 @@
   &:active {
     @apply bg-secondary-500 text-white;
   }
-  &--large {
-    @apply text-xl;
-  }
   &--mobile {
     @apply rounded-full p-3 mx-0;
   }
