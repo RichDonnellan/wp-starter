@@ -20,14 +20,17 @@ render('/lib/structure/front-page/front-page.view.php', [
     ],
     'mission' => (object) [
         (object) [
+            'icon' => 'bullseye',
             'statement' => 'We strive',
             'content' => 'We strive to illuminate the serious toll of alcoholism and problematic drinking on communities &amp; public health.',
         ],
         (object) [
+            'icon' => 'goal',
             'statement' => 'We contend',
             'content' => 'We contend misperceptions about what alcoholism looks like &amp; the idea that problematic drinking behaviors are benign.',
         ],
         (object) [
+            'icon' => 'swords',
             'statement' => 'We challenge',
             'content' => 'We challenge cultural norms that have desensitized the public to the dangers of problematic drinking and have perpetuated dangerous drinking behaviors.',
         ],
