@@ -9,7 +9,7 @@
                 <div class="mission bg-white rounded flex-1 md:mr-2 mb-2 md:mb-0 px-7 py-8">
                     <div class="relative z-5">
                         <div class="flex align-center mb-4">
-                            <img class="pr-3" src="<?= imagePath("{$mission->icon}.svg") ?>" alt="<?= ucfirst($mission->icon) ?> icon">
+                            <img class="pr-3" src="<?= imagePath("icon-{$mission->icon}.svg") ?>" alt="<?= ucfirst($mission->icon) ?> icon">
                             <h2 class="text-primary capitalize font-bold my-2"><?= $mission->statement ?></h2>
                         </div>
                         <p class="font-serif font-bold text-sm leading-loose"><?= $mission->content ?></p>
