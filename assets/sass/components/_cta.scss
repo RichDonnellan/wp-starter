@@ -12,7 +12,7 @@
 
   &--footer {
     @include background-image;
-    background-image: image('cta-footer.jpg');
+    background-image: image('img-cta-footer.jpg');
     min-height: rem(400);
   }
 

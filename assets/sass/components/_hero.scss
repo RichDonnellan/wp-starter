@@ -1,6 +1,6 @@
 .hero {
   @include background-image;
-  background-image: image('man-drinking-whiskey.jpg');
+  background-image: image('img-man-drinking-whiskey.jpg');
 
   & .container {
     min-height: rem(600);
