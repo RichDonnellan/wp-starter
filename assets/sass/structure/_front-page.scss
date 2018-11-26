@@ -25,3 +25,20 @@
     @apply mr-0;
   }
 }
+
+.learn-more {
+  $buffer: 1.5rem;
+  @apply relative font-bold no-underline flex items-center;
+  margin-left: $buffer;
+
+  &::before {
+    $s: 15px;
+    @include background-image($size: $s $s);
+    content: '';
+    background-image: image('icon-chevron-right.svg');
+    position: absolute;
+    left: -(1.5rem);
+    width: $s;
+    height: $s;
+  }
+}

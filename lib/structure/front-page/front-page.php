@@ -38,36 +38,25 @@ render('/lib/structure/front-page/front-page.view.php', [
     'topics' => (object) [
         (object) [
             'title' => 'Understanding Alcoholism',
-            'content' => 'Alcoholism is a chronic, lifelong disease. It\'s important to make a distinction between alcohol abuse and full-blown alcoholism.',
+            'content' => 'If someone in your family is living with an active alcohol use disorder, you and your family are not alone. <br> <br> The Substance Abuse and Mental Health Services Administration (SAMHSA) 2015 National Survey on Drug Use and Health (NSDUH) found that more than 15 million Americans over the age of 18 were living with an alcohol use disorder and about 623,000 young people between the ages of 12 and 18 were struggling as well.',
             'url' => 'alcoholism',
-            'modifier' => 'bg-aqua-haze',
+            'modifier' => 'bg-white',
             'image' => (object) [
-                'name' => 'understanding-alcoholism.jpg',
+                'name' => 'understanding-alcoholism',
                 'alt' => '',
-                'modifier' => 'md:mr-10',
+                'modifier' => 'lg:mr-10',
             ]
         ],
         (object) [
             'title' => 'Alcoholism Treatment',
-            'content' => 'When a person receives a diagnosis of alcoholism, the next important step is getting the appropriate alcoholism treatment.',
+            'content' => 'There are thousands of alcoholism treatment centers. Many have programs that provide a high level of care, but there are also many that will take advantage of you and treat you with substandard solutions. <br><br> For this reason, It\'s important to do your research, ask the right questions, and know what to look for.',
             'url' => 'treatment',
-            'modifier' => '',
+            'modifier' => 'bg-light-100',
             'image' => (object) [
-                'name' => 'alcoholism-treatment.jpg',
+                'name' => 'alcoholism-treatment',
                 'alt' => '',
-                'modifier' => 'md:ml-10 md:order-1',
+                'modifier' => 'lg:ml-10 lg:order-1',
             ]
-        ],
-        (object) [
-            'title' => 'Frequently Asked Questions',
-            'content' => 'Find the answers to most of your questions about alcoholism, alcohol abuse, alcoholics, and any other related topics.',
-            'url' => 'faq',
-            'modifier' => 'bg-aqua-haze',
-            'image' => (object) [
-                'name' => 'faq.jpg',
-                'alt' => '',
-                'modifier' => 'md:mr-10',
-            ],
         ],
     ],
 ]);
