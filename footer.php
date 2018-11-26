@@ -1,8 +1,10 @@
 <?php
 
-render('/lib/structure/footer-partnership.view.php');
+if (!is_front_page()) {
+    render('/lib/structure/footer-partnership.view.php');
+}
 
-if(!isPostType('content-marketing')) {
+if (!isPostType('content-marketing')) {
     $cta_footer = render('/lib/components/cta/cta-footer.php', ['content' => 'Recovery is Worth Fighting For. <br> We\'ll Help You.']);
 }
 
