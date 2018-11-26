@@ -24,8 +24,7 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
-let defaultConfig = require('tailwindcss/defaultConfig')()
-
+let defaultConfig = require('tailwindcss/defaultConfig')();
 
 /*
 |-------------------------------------------------------------------------------
@@ -44,35 +43,35 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 */
 
 let colors = {
-  'transparent': 'transparent',
+  transparent: 'transparent',
   'transparent-white-80': 'rgba(255,255,255,.8)',
   'transparent-black-5': 'rgba(0,0,0,.05)',
   'transparent-black-75': 'rgba(0,0,0,.75)',
-  'black': '#000000',
-  'white': '#ffffff',
+  black: '#000000',
+  white: '#ffffff',
   'aqua-haze': '#f6f8fa',
 
   'primary-100': '#75a7c7',
   'primary-200': '#608eae',
-  'primary': '#4b7596',
+  primary: '#4b7596',
   'primary-400': '#355b7d',
   'primary-500': '#204264',
 
   'secondary-100': '#df7b1a',
   'secondary-200': '#ca6514',
-  'secondary': '#b6500f',
+  secondary: '#b6500f',
   'secondary-400': '#a13a09',
   'secondary-500': '#8c2403',
 
   'dark-100': '#393939',
   'dark-200': '#2d2d2d',
-  'dark': '#222222',
+  dark: '#222222',
   'dark-400': '#181818',
   'dark-500': '#0a0a0a',
 
   'light-100': '#e8edf1',
   'light-200': '#f7f7f7',
-  'light': '#ffffff',
+  light: '#ffffff',
   'light-400': '#e8e8e8',
   'light-500': '#cccccc',
 };
@@ -773,7 +772,7 @@ module.exports = {
   plugins: [
     require('tailwindcss/plugins/container')({
       center: true,
-      padding: '.5rem', // 8px
+      padding: '1rem', // 16px
     }),
   ],
 
