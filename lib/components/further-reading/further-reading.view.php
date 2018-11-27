@@ -1,5 +1,5 @@
 <?php if ($articles) { ?>
-<div class="p-8 mb-6 bg-aqua-haze">
+<div class="p-8 mb-6 bg-light-200">
     <h2 class="font-bold mb-5">Further Reading</h2>
     <ul class="list-reset font-serif">
         <?php foreach($articles as $article) {
