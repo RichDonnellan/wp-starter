@@ -1,4 +1,15 @@
 .cta {
+  &--sidebar {
+    $w: 360;
+    $h: 300;
+    background-image: image('cta-sidebar@2x.jpg');
+    background-size: rem($w) rem($h);
+    width: rem($w);
+    height: rem($h);
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    outline-offset: -10px;
+  }
+
   &--footer {
     @include background-image;
     background-image: image('img-cta-footer.jpg');
