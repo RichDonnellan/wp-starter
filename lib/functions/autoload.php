@@ -24,6 +24,7 @@ function loadThemeFiles()
         'lib/functions/meta-boxes.php',
         'lib/functions/custom-post-types.php',
         'lib/functions/process-shortcodes.php',
+        'lib/functions/deslugify.php',
 
         'lib/post-types/content-marketing.php',
 
