@@ -59,4 +59,22 @@ render('/lib/structure/front-page/front-page.view.php', [
             ]
         ],
     ],
+    'faqs' => (object) [
+        (object) [
+            'question' => 'What is alcohol abuse?',
+            'answer' => 'Drinking can cross over into alcohol abuse when a person ends up drinking more or more frequently than they intend to, despite negative consequences to their health, career, or social relationships. Using alcohol as an escape from situations, thoughts, or emotions can also be a sign of problematic drinking, which can make the situation even worse. Alcohol abuse is a self-maintaining cycle of drinking to feel better, feeling worse because of the alcohol, and drinking more to try and cope.',
+        ],
+        (object) [
+            'question' => 'Is there a safe level of drinking?',
+            'answer' => 'Many people claim that a glass of wine per day can have positive health effects, but the truth is that the jury is still out. In general, 1 or 2 standard alcoholic drinks per week can be considered "safe," though even this amount is up for debate. Current research has no clear answer on what the possible consequences of having even one drink may be, and scientists are discovering more and more about this potent substance every day.',
+        ],
+        (object) [
+            'question' => 'What is considered intoxicated?',
+            'answer' => 'While the same number of drinks can affect everyone differently, there is a clear legal distinction when it comes to alcohol intoxication. A person is officially considered "intoxicated" when their blood alcohol content (BAC) reaches 0.08% or higher. This is the legal threshold for driving as well as the defining limit for what is considered binge drinking, and it can be measured within 30-70 minutes after consuming alcohol.',
+        ],
+        (object) [
+            'question' => 'Does alcohol impact everyone the same way?',
+            'answer' => 'Everyone reacts differently to alcohol. The effects of drinking can vary by age, gender, body weight, metabolism, tolerance, psychological health, and many other unique individual factors. Even if two people drink the same amount, they will likely find that they each experience very different subjective effects and will likely face different consequences to their individual health and wellbeing.',
+        ],
+    ],
 ]);

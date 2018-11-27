@@ -4,4 +4,5 @@
     <?php render('/lib/structure/front-page/stats.view.php', $data->stats); ?>
     <?php render('/lib/structure/front-page/mission.view.php', $data->mission); ?>
     <?php render('/lib/structure/front-page/topics.view.php', $data->topics); ?>
+    <?php render('/lib/structure/front-page/faq.view.php', $data->faqs); ?>
 </main>
