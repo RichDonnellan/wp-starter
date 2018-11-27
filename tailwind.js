@@ -476,6 +476,7 @@ module.exports = {
     '4xl': '90rem',
     '5xl': '100rem',
     full: '100%',
+    fwt: '56.25rem', // Full width template
   },
 
   /*
