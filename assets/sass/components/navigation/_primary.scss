@@ -14,7 +14,7 @@
         border-bottom: $active-border-thickness solid currentColor;
       }
       & > a {
-        @apply flex items-center px-5 no-underline;
+        @apply flex items-center px-5 no-underline font-bold;
         color: currentColor;
       }
     }
