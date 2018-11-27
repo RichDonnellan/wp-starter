@@ -4,7 +4,7 @@
 .error404 article,
 .single article,
 .archive article {
-  max-width: rem(900);
+  @apply max-w-fwt;
 
   h1,
   h2,
@@ -22,9 +22,14 @@
     display: none;
   }
 
+  p, ul, ol, a {
+    @apply font-serif;
+  }
+
   p, ul, ol {
     @apply mb-6;
   }
+
   ul, ol {
     @apply pl-6;
 
